@@ -55,7 +55,7 @@ public class SpellingBeeGameGUI extends Application {
     }
 
     public boolean isValidWord(String word) {
-        String lowerCaseWord = word.toLowerCase(); // Convert user input to lowercase
+        String lowerCaseWord = word.toLowerCase();
         boolean isValid = words.stream().anyMatch(w -> w.toLowerCase().equals(lowerCaseWord));
         if (isValid && !enteredWords.contains(lowerCaseWord)) {
             enteredWords.add(lowerCaseWord);
